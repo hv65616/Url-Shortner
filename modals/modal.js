@@ -15,6 +15,14 @@ const urlschema = mongoose.Schema(
         timestamps: { type: Number },
       },
     ],
+    ipAddress: {
+      type: String,
+      required: true,
+    },
+    location: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
